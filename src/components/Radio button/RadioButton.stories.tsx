@@ -1,6 +1,5 @@
 import { RadioButton } from "./RadioButton";
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 export default {
   title: "Radio Button",

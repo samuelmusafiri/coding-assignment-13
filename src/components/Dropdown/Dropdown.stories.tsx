@@ -1,6 +1,5 @@
 import { Dropdown } from "./Dropdown";
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 export default {
   title: "Dropdown",

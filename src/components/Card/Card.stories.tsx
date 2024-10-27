@@ -1,6 +1,5 @@
 import { Card } from "./Card";
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 export default {
   title: "Card",

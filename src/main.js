@@ -1,18 +1,13 @@
-"use strict";
-var __importDefault =
-  (this && this.__importDefault) ||
-  function (mod) {
-    return mod && mod.__esModule ? mod : { default: mod };
-  };
-Object.defineProperty(exports, "__esModule", { value: true });
-var react_1 = __importDefault(require("react"));
-var client_1 = __importDefault(require("react-dom/client")); // Assuming React 18 or later
-var App_1 = __importDefault(require("./App"));
-var root = client_1.default.createRoot(document.getElementById("root"));
+import React from "react"; // Import React
+import ReactDOM from "react-dom/client"; // Assuming React 18 or later
+import App from "./App"; // Import the main App component
+
+// Create a root for rendering
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render the application within StrictMode
 root.render(
-  react_1.default.createElement(
-    react_1.default.StrictMode,
-    null,
-    react_1.default.createElement(App_1.default, null),
-  ),
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
 );

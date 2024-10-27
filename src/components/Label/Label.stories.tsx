@@ -1,6 +1,5 @@
 import { Label } from "./Label";
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 export default {
   title: "Label",
