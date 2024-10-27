@@ -1,13 +1,17 @@
-import styled from 'styled-components';
-import { TableProps } from './Table.types';
-import React from 'react';
+import styled from "styled-components";
+import { TableProps } from "./Table.types";
+import React from "react";
 
-const StyledTable = styled.table<{ disabled?: boolean; backgroundColor?: string }>`
+const StyledTable = styled.table<{
+  disabled?: boolean;
+  backgroundColor?: string;
+}>`
   width: 100%;
   border-collapse: collapse;
-  background-color: ${(props) => (props.disabled ? 'grey' : props.backgroundColor || '#fff')};
+  background-color: ${(props) =>
+    props.disabled ? "grey" : props.backgroundColor || "#fff"};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
-  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'default')};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
 `;
 
 const StyledCell = styled.td`
@@ -15,7 +19,12 @@ const StyledCell = styled.td`
   border: 1px solid #ddd;
 `;
 
-export const Table: React.FC<TableProps> = ({ headers, rows, disabled = false, backgroundColor }) => {
+export const Table: React.FC<TableProps> = ({
+  headers,
+  rows,
+  disabled = false,
+  backgroundColor,
+}) => {
   return (
     <StyledTable disabled={disabled} backgroundColor={backgroundColor}>
       <thead>
